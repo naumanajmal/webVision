@@ -22,7 +22,7 @@ module.exports = withMT( {
       'bermuda': '#78dcca',
       "black":"#000000",
       "yellow":"#FCC067",
-      "lightBlurbg":"#FCFBFE"
+      "lightBlurbg":"#F2F0F9"
     },
     extend: {},
   },

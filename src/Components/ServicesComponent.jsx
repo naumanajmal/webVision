@@ -33,20 +33,20 @@ const ServicesComponent = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row ">
-        <div className=" text-white bg-blue p-8 rounded-lg mb-8 md:mb-0 md:w-1/2 md:mr-8 relative">
+    <div className="container mx-auto px-4 py-8 ">
+      <div className="flex flex-col lg:flex-row ">
+        <div className=" text-white bg-blue p-8 rounded-lg mb-8 lg:mb-0 lg:w-1/2 lg:mr-8 relative">
           <div>
           <h2 className="text-3xl font-bold mb-4">What are we offering?</h2>
           
-          <img src={Vector} alt="vector" className="rounded-lg  h-20 -rotate-90 md:rotate-0 pl-10 md:pl-0" />
+          <img src={Vector} alt="vector" className="rounded-lg  h-20 -rotate-90 lg:rotate-0 pl-10 lg:pl-0" />
        
        
           </div>
           
-          <img src={Man} alt="Man with laptop" className="rounded-lg absolute right-0 bottom-0 md:left-0 h-32 md:h-auto " />
+          <img src={Man} alt="Man with laptop" className="rounded-lg absolute right-0 bottom-0 lg:left-0 h-full lg:h-auto " />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-3/5 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/5 ">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

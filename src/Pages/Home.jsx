@@ -5,15 +5,23 @@ import ServicesComponent from '../Components/ServicesComponent'
 import TimeLine from '../Components/Timeline'
 import DigitalPioneersHero from '../Components/DigitalPioneersHero'
 import UniqueSolutions from '../Components/UniqueSolutions'
+import Projects from '../Components/Projects'
+import FAQ from '../Components/FAQ'
+import ContactForm from '../Components/ContactForm'
+import Footer from '../Components/Footer'
 const Home = () => {
   return (
-    <div>
+    <div className=''>
       <Navbar/>
       <HeroSection/>
       <ServicesComponent/>
       <DigitalPioneersHero/>
       <UniqueSolutions/>
       <TimeLine/>
+      <Projects/>
+      <FAQ/>
+      <ContactForm/>
+      <Footer/>
     </div>
   )
 }

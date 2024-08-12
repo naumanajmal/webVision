@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-4 px-10 relative">
+    <nav className="bg-white p-4 container relative">
       <div className="container mx-auto flex justify-between items-center">
         <img src={Logo} alt="Logo" />
         
