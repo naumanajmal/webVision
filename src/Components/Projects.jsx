@@ -7,82 +7,27 @@ import Project2 from "../assets/project6.png"
 import Project3 from "../assets/project3.svg"
 import Project7 from "../assets/project7.png"
 import Project8 from "../assets/project8.png"
-const ProjectCard = ({ image, category, title, link }) => (
-    <Link to={link} className="block  rounded-lg   overflow-hidden hover:shadow-lg transition duration-300 ">
+import CaseStudyData from './CaseStudy/Data';
+const ProjectCard = ({ project}) => {
+    return (
+    <Link to={"case_study"} state={{project:project}} className="block  rounded-lg      overflow-hidden hover:shadow-lg transition duration-300 ">
         <div className="relative">
-            <img src={image} alt={title} className="w-full h-full object-cover rounded-md  border-[1px]  border-gray-300" />
+            <img src={project.picture} alt={project.title} className="w-full h-full object-cover rounded-md  border-[1px]  border-gray-300" />
             <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition duration-300"></div>
         </div>
         <div className="p-4">
-            <p className="text-sm text-purple-600 mb-2 font-Mona ">{category}</p>
-            <h3 className="text-lg font-semibold text-gray-800 font-MonaBold">{title}</h3>
+            <p className="text-sm text-purple-600 mb-2 font-Mona ">{"Website Design And Development"}</p>
+            <h3 className="text-lg font-semibold text-gray-800 font-MonaBold">{project.mission}</h3>
         </div>
     </Link>
-);
+)};
 
 
-const SingleProjectCard = () => {
 
-}
 
 
 function Projects() {
 
-
-
-    const firstRowProjects = [
-        {
-            image: Project1,
-            category: 'Websites & Digital Platforms',
-            title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-            link: '/projects/spring-labs',
-        },
-        {
-            image: Project2,
-            category: 'Websites & Digital Platforms',
-            title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-            link: '/projects/spring-labs-2',
-        },
-        // {
-        //     image: Project3,
-        //     category: 'Websites & Digital Platforms',
-        //     title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-        //     link: '/projects/spring-labs-3',
-        // },
-        // {
-        //     image: Project4,
-        //     category: 'Websites & Digital Platforms',
-        //     title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-        //     link: '/projects/spring-labs-4',
-        // },
-    ];
-
-    const secondRowProjects = [
-        {
-            image: Project1,
-            category: 'Websites & Digital Platforms',
-            title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-            link: '/projects/spring-labs',
-        },
-        {
-            image: Project2,
-            category: 'Websites & Digital Platforms',
-            title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-            link: '/projects/spring-labs-2',
-        },
-        {
-            image: Project2,
-            category: 'Websites & Digital Platforms',
-            title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-            link: '/projects/spring-labs-3',
-        },
-        // {
-        //     image: Project4,
-        //     category: 'Websites & Digital Platforms',
-        //     title: 'Spring Labs - Disrupting How Financial Info Is shared.',
-        //     link: '/projects/spring-labs-4',
-        // },
-    ];
 
     return (
         <div className='container w-full  md:px-32 px-10 py-16 md:mt-32 mt-10 flex  flex-col items-center md:space-y-10'>
@@ -110,31 +55,23 @@ function Projects() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                {firstRowProjects.map((project, index) => (
-                    <ProjectCard key={index} {...project} />
+                {CaseStudyData.slice(3,5).map((project, index) => (
+
+                    <ProjectCard key={index} project = {project}/>
                 ))}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3  gap-8">
-                {secondRowProjects.map((project, index) => (
-                    <ProjectCard key={index} {...project} />
+                {CaseStudyData.slice(0,3).map((project, index) => (
+                    <ProjectCard key={index} project = {project} />
                 ))}
             </div>
-            <Link to={"/projects"} className="block  rounded-md  w-full h-full  overflow-hidden hover:shadow-lg transition duration-300 ">
-                <div className="relative " style={{backgroundColor:"#E5E7EB"}}>
-                    <img src={Project8} alt={"Websites & Digital Platforms"} className="w-full h-1/2 object-cover rounded-md  border-[1px]  border-gray-300 px-16 pt-12" />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition duration-300"></div>
-                </div>
-                <div className="p-4">
-                    <p className="text-sm text-purple-600 mb-2 font-Mona ">{'Websites & Digital Platforms'}</p>
-                    <h3 className="text-lg font-semibold text-gray-800 font-MonaBold">{'Spring Labs - Disrupting How Financial Info Is shared.'}</h3>
-                </div>
-            </Link>
-            <div className="text-center mt-12">
+ 
+            {/* <div className="text-center mt-12">
                 <Link to="/all-projects" className="inline-block bg-blue text-white px-6 py-3 rounded-full font-MonaBold hover:bg-purple-700 transition duration-300">
                     Show all projects →
                 </Link>
 
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from "../assets/Hero.png"
-import { IoPlayCircle } from "react-icons/io5";
 
 const HeroSection = () => {
   return (
@@ -8,10 +7,10 @@ const HeroSection = () => {
       {/* Left side content */}
       <div className="md:w-3/4 mb-8  md:mb-0 space-y-10 flex flex-col items-center md:items-start">
         <div className='space-y-1'>
-        <h1 className="text-5xl lg:text-7xl font-bold font-MonaBold ">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-MonaBold ">
           Secure <span className="text-blue  ">Digital</span> 
         </h1>
-        <h1 className="text-5xl lg:text-7xl font-bold mb-4 font-MonaBold">Transformation</h1>
+        <h1 className="text-4xl md:5xl lg:text-7xl font-bold mb-4 font-MonaBold">Transformation</h1>
         </div>
         
         <div className="flex items-center mb-6">

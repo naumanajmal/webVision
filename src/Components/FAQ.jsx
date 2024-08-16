@@ -27,30 +27,39 @@ const FAQ = () => {
 
     const faqData = [
         {
-            question: "How do I make a yearly payment?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+            question: "How long does it take to design and develop a website?",
+            answer: "The timeline for designing and developing a website depends on the complexity and scope of the project. On average, it can take 4 to 8 weeks from the initial consultation to the launch."
         },
         {
-            question: "What are the benefits I would get?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            question: "What is your process for designing a website?",
+            answer: "Our process involves understanding your business goals, target audience, and brand identity. We start with a consultation, followed by wireframing, design mockups, development, and finally, testing and deployment."
         },
         {
-            question: "What kind of support do you provide?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            question: "Do you offer custom website designs or use templates?",
+            answer: "We specialize in custom website designs tailored to your brand and business needs. However, if you're looking for a quicker and more budget-friendly option, we can also work with premium templates."
         },
         {
-            question: "How this technology works?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            question: "Can you help with website maintenance after it's launched?",
+            answer: "Yes, we offer ongoing website maintenance services to ensure your site remains secure, up-to-date, and optimized for performance. This includes regular updates, backups, and technical support."
         },
         {
-            question: "Can I transfer my existing website to your hosting service?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            question: "Will my website be mobile-friendly?",
+            answer: "Absolutely. All our websites are designed to be fully responsive, ensuring they look and function perfectly on all devices, including desktops, tablets, and smartphones."
         },
         {
-            question: "How this technology works?",
-            answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            question: "Can you redesign my existing website?",
+            answer: "Yes, we can redesign your existing website to improve its functionality, user experience, and visual appeal. Our goal is to make sure your website reflects your brand and meets modern web standards."
+        },
+        {
+            question: "Do you provide SEO services?",
+            answer: "Yes, we include basic SEO optimization in our website development packages. We can also offer advanced SEO services to help your site rank higher in search engine results and drive more traffic."
+        },
+        {
+            question: "What platforms do you use for website development?",
+            answer: "We work with a variety of platforms, including WordPress, Shopify, and custom-built solutions using technologies like React, Angular, and Django. We'll recommend the best platform based on your specific needs."
         },
     ];
+    
 
     const toggleQuestion = (index) => {
         setOpenIndex(openIndex === index ? -1 : index);
