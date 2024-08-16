@@ -9,6 +9,12 @@ module.exports = withMT( {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+
+      Mona: ["Mona", "sans-serif"],
+      MonaBold: ["Mona-Bold", "sans-serif"],
+      MonaSemiBold: ["Mona-SemiBold", "sans-serif"],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -22,7 +28,9 @@ module.exports = withMT( {
       'bermuda': '#78dcca',
       "black":"#000000",
       "yellow":"#FCC067",
-      "lightBlurbg":"#F2F0F9"
+      "lightBlurbg":"#F2F0F9",
+      "textSecondary":"#343436"
+
     },
     extend: {},
   },

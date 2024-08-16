@@ -2,5 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Mona";
+    src: url("/font/MonaSans-Regular.ttf");
+  }
 
+  @font-face {
+    font-family: "Mona-Bold";
+    src: url("/font/MonaSans-Bold.ttf");
+  }
+
+
+  @font-face {
+    font-family: "Mona-SemiBold";
+    src: url("/font/MonaSans-SemiBold.ttf");
+  }
  

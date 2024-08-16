@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-4 container relative">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-blue-500 p-4 container relative">
+      <div className=" mx-auto flex justify-between items-center">
         <img src={Logo} alt="Logo" />
         
         {/* Desktop menu */}
         <div className="hidden lg:flex space-x-4 border-blue border-[1px] rounded-full w-3/6 items-center justify-evenly p-1">
-          <NavItem to="/" label="Home" />
+          <NavItem to="/" label="Home" className=""/>
           <NavItem to="/about" label="About Us" />
           <NavItem to="/contact" label="Contact Us" />
           <NavItem to="/portfolio" label="Portfolio" />
@@ -36,7 +36,7 @@ const Navbar = () => {
         </button>
         
         {/* Get Started button */}
-        <button className="hidden lg:block border-[1px]   text-blue px-4 py-2 rounded-full hover:bg-blue hover:text-white text-xs">
+        <button className="hidden lg:block border-[1px] font-Mona   text-blue px-4 py-2 rounded-full hover:bg-blue hover:text-white text-xs">
           Get Started
         </button>
       </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
             <NavItem to="/about" label="About Us" onClick={toggleMenu} />
             <NavItem to="/contact" label="Contact Us" onClick={toggleMenu} />
             <NavItem to="/portfolio" label="Portfolio" onClick={toggleMenu} />
-            <button className="border-[1px] text-white px-4 py-2 rounded-md w-full">
+            <button className="border-[1px] text-white px-4 py-2 font-Mona rounded-md w-full ">
               Get Started
             </button>
           </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
 const NavItem = ({ to, label, onClick }) => (
   <Link
     to={to}
-    className="hover:bg-blue hover:text-white text-center px-4 py-2 rounded-full transition duration-300 w-full text-blue text-xs"
+    className="hover:bg-blue font-Mona hover:text-white text-center px-4 py-2 rounded-full transition duration-300 w-full text-blue text-xs"
     onClick={onClick}
   >
     {label}

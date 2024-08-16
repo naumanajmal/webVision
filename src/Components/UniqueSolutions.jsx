@@ -33,12 +33,12 @@ const UniqueSolutions = () => {
     <div className="container mx-auto px-4 py-16">
       <div className='flex flex-row items-center'>
         <div >
-      <h2 className="text-3xl md:text-4xl font-bold mb-2">
+      <h2 className="text-3xl md:text-4xl font-MonaBold mb-2">
         <span className="text-blue">Unique Solutions </span> <span>for</span>
         <br />
         Unique Challenges
       </h2>
-      <p className="text-gray-600 mb-12">
+      <p className="text-gray-600 mb-12 font-Mona">
         Some of the industries our digital agency specializes in.
       </p>
       </div>
@@ -55,8 +55,8 @@ const UniqueSolutions = () => {
   />
 </div>
             
-            <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
-            <p className="text-gray-600">{solution.description}</p>
+            <h3 className="text-base font-MonaSemiBold ">{solution.title}</h3>
+            <p className="text-textSecondary text-base font-Mona">{solution.description}</p>
           </div>
         ))}
       </div>

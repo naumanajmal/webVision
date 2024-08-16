@@ -11,7 +11,7 @@ import ContactForm from '../Components/ContactForm'
 import Footer from '../Components/Footer'
 const Home = () => {
   return (
-    <div className=''>
+    <div className='bg-blue-500  flex flex-col items-center'>
       <Navbar/>
       <HeroSection/>
       <ServicesComponent/>

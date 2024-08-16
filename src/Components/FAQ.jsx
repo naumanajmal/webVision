@@ -8,13 +8,13 @@ const FAQItem = ({ question, answer, isOpen, toggleOpen }) => {
                 className="w-full text-left p-4 flex justify-between items-center focus:outline-none"
                 onClick={toggleOpen}
             >
-                <span className="font-semibold">{question}</span>
+                <span className="font-MonaSemiBold">{question}</span>
                 <span className={`text-blue text-2xl transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}>
                     {isOpen ? (<span className='bg-gray-300 px-2 rounded-md text-blue'>-</span>) : (<span className='bg-blue  text-white px-2 rounded-md' >+</span>)}
                 </span>
             </button>
             {isOpen && (
-                <div className="p-4 pt-0 text-gray-600 text-xs">
+                <div className="p-4 pt-0 text-gray-600 text-xs font-Mona">
                     {answer}
                 </div>
             )}
@@ -58,9 +58,9 @@ const FAQ = () => {
 
     return (
         <div className="container mx-auto px-4 py-16 flex flex-col items-center">
-            <div className=" px-10 pr-16 py-4 relative w-3/5">
+            <div className=" px-10 pr-16 py-4 relative md:w-1/2">
                 {/* Top-left star */}
-                <h2 className="text-4xl md:text-3xl font-bold  text-center">
+                <h2 className="text-4xl md:text-3xl font-bold  text-center font-MonaBold">
                     Frequently Asked <span className="text-blue">Questions</span>
                 </h2>
 
@@ -73,7 +73,7 @@ const FAQ = () => {
             </div>
             <div>
 
-                <p className="text-xs text-gray-600 text-center mb-8 relative">
+                <p className="text-xs text-gray-600 text-center mb-8 relative font-Mona">
                     Here are the steps taken to deliver you a outstanding web design project
                     {/* Bottom-right star */}
                 </p>

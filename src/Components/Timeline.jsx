@@ -8,7 +8,7 @@ import {
     TimelineBody,
     Typography,
 } from "@material-tailwind/react";
-import SmallStart  from "../assets/small-start.svg"
+import SmallStart from "../assets/small-start.svg"
 import LargeStart from "../assets/large-start.svg"
 import { FaCircle } from "react-icons/fa";
 
@@ -56,47 +56,117 @@ export default function TimeLine() {
         <div className="w-full  mx-auto px-4 flex flex-col justify-center items-center ">
             <div className=" px-10 pr-16 py-4 relative">
                 {/* Top-left star */}
-                <h2 className="text-4xl md:text-3xl font-bold  text-center">
+                <h2 className="text-4xl md:text-3xl font-bold  text-center font-MonaBold">
                     Web Design <span className="text-purple-600">Process</span>
                 </h2>
 
                 <div className="absolute top-0 left-0 text-purple-600">
-                   <img src={LargeStart}></img>
+                    <img src={LargeStart}></img>
                 </div>
                 <span className="absolute bottom-1/3 right-0 text-purple-600">
-                <img src={SmallStart}></img>
+                    <img src={SmallStart}></img>
                 </span>
             </div>
             <div>
 
-                <p className="text-md text-gray-600 text-center mb-8 relative">
+                <p className="text-md text-gray-600 text-center mb-8 relative font-Mona">
                     Here are the steps taken to deliver you a outstanding web design project
-                    {/* Bottom-right star */}
                 </p>
             </div>
-            <Timeline className="flex  max-w-4xl">
-                {timelineData.map((item, index) => (
-                    <TimelineItem key={index} className={`flex justify-end`}>
-                        {index !== timelineData.length - 1 && <TimelineConnector />}
-                        <div className={`w-1/2 pr-8 bg-`}>
-                            <TimelineHeader >
-                                <TimelineIcon className="p-3 bg-blue">
-                                    <FaCircle className="h-2 w-2 text-white" />
-                                </TimelineIcon>
-                                <Typography variant="h6" color="blue-gray" className="text-lg font-semibold text-blue">
-                                    {item.title}
-                                </Typography>
-                            </TimelineHeader>
-                            <TimelineBody className="pb-8">
-                                <Typography color="gray" className="font-normal text-gray-600 text-sm">
-                                    {item.description}
-                                </Typography>
-
-                            </TimelineBody>
+            <div class="p-5">
+     
+                <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+                    <div class="flex md:contents flex-row-reverse">
+                        <div
+                            class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Understanding Your Vision</h3>
+                            <p class="mt-2 leading-6 font-Mona">We start by diving deep into your business needs and goals, ensuring we capture your vision perfectly before moving forward.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#1: Discovery & Planning</span>
                         </div>
-                    </TimelineItem>
-                ))}
-            </Timeline>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300 rounded-t-full bg-gradient-to-b from-indigo-400 to-indigo-300">
+                                </div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300"></div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                        <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Crafting the Visual Experience</h3>
+                            <p class="mt-2 leading-6 font-Mona">Our team creates a custom design and layout that reflects your brand identity, ensuring a seamless user experience.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#2: Design & Layout</span>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents flex-row-reverse">
+                        <div
+                            class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Bringing Your Ideas to Life</h3>
+                            <p class="mt-2 leading-6 font-Mona">We integrate all necessary features and functionalities to ensure your website not only looks good but works flawlessly.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#3: Feature Implementation</span>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300 rounded-t-full bg-gradient-to-b from-indigo-400 to-indigo-300">
+                                </div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300"></div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                        <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Optimizing for All Devices</h3>
+                            <p class="mt-2 leading-6 font-Mona">Your website is fine-tuned to be fully responsive, providing an optimal viewing experience on any device.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#4: Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="flex md:contents flex-row-reverse">
+                        <div
+                            class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Perfecting & Publishing</h3>
+                            <p class="mt-2 leading-6 font-Mona">We conduct a thorough review to ensure everything is in order, then launch your site to the world with confidence.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#5: Final Review & Launch</span>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300 rounded-t-full bg-gradient-to-b from-indigo-400 to-indigo-300">
+                                </div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-indigo-300"></div>
+                            </div>
+                            <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
+                        </div>
+                        <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                            <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Here for You Every Step of the Way</h3>
+                            <p class="mt-2 leading-6 font-Mona">Our support doesn't end at launch; we're here to provide technical assistance and ensure your website continues to perform at its best.</p>
+                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#6: Ongoing Support</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     );
