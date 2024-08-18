@@ -34,12 +34,10 @@ const HeroSection = () => {
             Transforming your digital presence for lasting impact
           </li>
         </ul>
-        <div className="flex flex-wrap gap-5 lg:w-1/2  px-12 md:px-0 ">
-        
+        <div className="flex flex-wrap gap-5 px-0 ">
           <span className="px-6 py-2 bg-yellow text-gray-900 rounded-full text-sm font-Mona">Web Design</span>
           <span className="px-6 py-2 bg-blue text-white rounded-full text-sm font-Mona">Web Development</span>
           <span className="px-6 py-2 bg-black text-white rounded-full text-sm font-Mona ">Ui/Ux</span>
-      
           <span className="px-6 py-2 bg-black text-white rounded-full text-sm font-Mona">SEO Optimization</span>
           
        
