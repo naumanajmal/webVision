@@ -1,5 +1,6 @@
 import React from 'react';
 import Team from "../assets/team.png"
+import { Link } from 'react-router-dom';
 const DigitalPioneersHero = () => {
   return (
     <div className="bg-blue text-white md:mt-20 mt-6 px-10">
@@ -9,11 +10,10 @@ const DigitalPioneersHero = () => {
             Digital Pioneers Ready to Illuminate Your Path
           </h1>
           <p className="mb-6 text-lg font-Mona">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-          </p>
-          <button className="bg-white font-MonaBold text-blue font-semibold py-2 px-6 rounded-sm hover:bg-purple-100 transition duration-300">
-            Get Started Now
-          </button>
+          We deliver comprehensive, efficient, and scalable technology solutions tailored to meet the unique needs your businesses.          </p>
+          <Link to={"contact_us"} className="bg-white font-MonaBold text-blue font-semibold py-2 px-6 rounded-sm hover:bg-purple-100 transition duration-300">
+            Contact Now
+          </Link>
         </div>
         <div className="lg:w-2/5 relative">
           <img 

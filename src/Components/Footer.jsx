@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Logo from "../assets/logo.svg"
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 px-8 md:px-8 w-full flex flex-col items-center">
@@ -12,7 +13,7 @@ const Footer = () => {
              <img src={Logo}></img>
             </div>
             <p className="text-sm text-gray-400 mb-4 font-Mona">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+            Empowering businesses with innovative, secure, and custom web solutions, tailored to drive growth and success.
             </p>
             <div className="flex space-x-4 ">
               <a href="#" className="text-gray-400 hover:text-white"><Facebook size={20} /></a>
@@ -23,15 +24,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 font-MonaBold">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white font-Mona">Web Design</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white font-Mona">Mobile Apps</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white font-Mona">Web Hosting</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white font-Mona">Server Security</a></li>
-            </ul>
-          </div>
+        
 
           {/* Contact Info and Get in touch */}
           <div className='flex flex-col '>
@@ -42,7 +35,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-4 font-Mona">Ixi.ong@gmail.com</p>
             
             <h3 className="text-lg font-semibold mb-4 font-MonaBold">Get in touch</h3>
-            <a href="#" className="text-blue-500 hover:text-blue-400 font-Mona">Contact Form →</a>
+            <Link to={"/contact_us"} className="text-blue-500 hover:text-blue-400 font-Mona">Contact Form →</Link>
           </div>
       
         </div>

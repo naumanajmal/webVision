@@ -12,9 +12,11 @@ function CaseStudy() {
     return (
         <div className='flex flex-col items-center gap-20'>
             <Navbar/>
+            <main  className =  "pt-10">
             <HeroSection project = {project}/>
             <CaseStudyDescription project = {project}/>
             {/* <Projects/> */}
+            </main>
             <Footer/>
         </div>
     );

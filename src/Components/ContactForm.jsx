@@ -86,9 +86,7 @@ const ContactForm = () => {
                 <Field name="message" as="textarea" id="message" rows="4" className="w-full p-2 border rounded font-Mona" />
                 <ErrorMessage name="message" component="div" className="text-red-500 text-sm mt-1 font-Mona" />
               </div>
-              <div className="text-sm text-gray-600 font-Mona">
-                You agree to our friendly privacy policy.
-              </div>
+              
               <button type="submit" disabled={isSubmitting} className="w-full bg-blue text-white p-3 rounded font-semibold hover:bg-purple-700 transition duration-300 font-MonaBold">
                 Send message
               </button>

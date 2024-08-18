@@ -11,8 +11,9 @@ import ContactForm from '../Components/ContactForm'
 import Footer from '../Components/Footer'
 const Home = () => {
   return (
-    <div className='bg-blue-500  flex flex-col items-center'>
+    <div className='  '>
       <Navbar/>
+      <main  className =  "pt-10  flex flex-col items-center">
       <HeroSection/>
       <ServicesComponent/>
       <DigitalPioneersHero/>
@@ -21,6 +22,7 @@ const Home = () => {
       <Projects/>
       <FAQ/>
       <ContactForm/>
+      </main>
       <Footer/>
     </div>
   )

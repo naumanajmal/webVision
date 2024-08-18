@@ -69,7 +69,7 @@ const FAQ = () => {
         <div className="container mx-auto px-4 py-16 flex flex-col items-center">
             <div className=" px-10 pr-16 py-4 relative md:w-1/2">
                 {/* Top-left star */}
-                <h2 className="text-4xl md:text-3xl font-bold  text-center font-MonaBold">
+                <h2 className="text-4xl md:text-5xl font-bold  text-center font-MonaBold">
                     Frequently Asked <span className="text-blue">Questions</span>
                 </h2>
 

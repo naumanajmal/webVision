@@ -10,7 +10,7 @@ import Project8 from "../assets/project8.png"
 import CaseStudyData from './CaseStudy/Data';
 const ProjectCard = ({ project}) => {
     return (
-    <Link to={"case_study"} state={{project:project}} className="block  rounded-lg      overflow-hidden hover:shadow-lg transition duration-300 ">
+    <Link to={"/case_study"} state={{project:project}} className="block  rounded-lg      overflow-hidden hover:shadow-lg transition duration-300 ">
         <div className="relative">
             <img src={project.picture} alt={project.title} className="w-full h-full object-cover rounded-md  border-[1px]  border-gray-300" />
             <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition duration-300"></div>
@@ -30,12 +30,12 @@ function Projects() {
 
 
     return (
-        <div className='container w-full  md:px-32 px-10 py-16 md:mt-32 mt-10 flex  flex-col items-center md:space-y-10'>
+        <div className='container w-full  md:px-32 px-10 py-5 md:mt-10 mt-5 flex  flex-col items-center md:space-y-10'>
 
-
-            <div className=" px-10 pr-16 py-4 relative   lg:w-1/2 md:3/5">
+<div className='px-10 pr-16 py-4 relative   lg:w-3/5 md:3/5 space-y-4'>
+            <div className="">
                 {/* Top-left star */}
-                <h2 className="text-lg md:text-3xl font-bold  text-center font-MonaBold">
+                <h2 className="text-lg 4xl  md:text-5xl font-bold  text-center font-MonaBold">
                     Web Design <span className="text-blue">Projects</span>
                 </h2>
 
@@ -46,7 +46,7 @@ function Projects() {
                     <img src={SmallStart}></img>
                 </span>
             </div>
-            <div>
+           
 
                 <p className="text-md text-gray-600 text-center mb-8 relative font-Mona">
                     Here are the steps taken to deliver you a outstanding web design project

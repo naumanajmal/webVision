@@ -56,7 +56,7 @@ export default function TimeLine() {
         <div className="w-full  mx-auto px-4 flex flex-col justify-center items-center ">
             <div className=" px-10 pr-16 py-4 relative">
                 {/* Top-left star */}
-                <h2 className="text-4xl md:text-3xl font-bold  text-center font-MonaBold">
+                <h2 className="text-4xl md:text-5xl font-bold  text-center font-MonaBold">
                     Web Design <span className="text-purple-600">Process</span>
                 </h2>
 
@@ -81,7 +81,7 @@ export default function TimeLine() {
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Understanding Your Vision</h3>
                             <p class="mt-2 leading-6 font-Mona">We start by diving deep into your business needs and goals, ensuring we capture your vision perfectly before moving forward.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#1: Discovery & Planning</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#1: Discovery & Planning</span>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
@@ -102,7 +102,7 @@ export default function TimeLine() {
                         <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Crafting the Visual Experience</h3>
                             <p class="mt-2 leading-6 font-Mona">Our team creates a custom design and layout that reflects your brand identity, ensuring a seamless user experience.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#2: Design & Layout</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#2: Design & Layout</span>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ export default function TimeLine() {
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Bringing Your Ideas to Life</h3>
                             <p class="mt-2 leading-6 font-Mona">We integrate all necessary features and functionalities to ensure your website not only looks good but works flawlessly.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#3: Feature Implementation</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#3: Feature Implementation</span>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
@@ -132,7 +132,7 @@ export default function TimeLine() {
                         <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Optimizing for All Devices</h3>
                             <p class="mt-2 leading-6 font-Mona">Your website is fine-tuned to be fully responsive, providing an optimal viewing experience on any device.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#4: Responsive Design</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#4: Responsive Design</span>
                         </div>
                     </div>
                     <div class="flex md:contents flex-row-reverse">
@@ -140,7 +140,7 @@ export default function TimeLine() {
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Perfecting & Publishing</h3>
                             <p class="mt-2 leading-6 font-Mona">We conduct a thorough review to ensure everything is in order, then launch your site to the world with confidence.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#5: Final Review & Launch</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#5: Final Review & Launch</span>
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
@@ -161,7 +161,7 @@ export default function TimeLine() {
                         <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3 class="text-lg font-semibold lg:text-xl font-MonaBold">Here for You Every Step of the Way</h3>
                             <p class="mt-2 leading-6 font-Mona">Our support doesn't end at launch; we're here to provide technical assistance and ensure your website continues to perform at its best.</p>
-                            <span class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap font-Mona">Step No#6: Ongoing Support</span>
+                            <span class="absolute text-sm text-indigo-200 -top-5 left-2 whitespace-nowrap font-Mona">Step No#6: Ongoing Support</span>
                         </div>
                     </div>
 

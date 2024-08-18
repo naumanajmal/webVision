@@ -9,23 +9,23 @@ const UniqueSolutions = () => {
   const solutions = [
     {
       icon: User,
-      title: 'Employee Owned',
-      description: 'Being employee-owned keeps us focused on the unique needs of our users, and we wouldnt have it any other way.'
+      title: 'Custom Solutions',
+      description: 'We deliver tailored web designs that perfectly match your brand and business goals.'
     },
     {
       icon: Unlock,
-      title: 'Passion for privacy',
-      description: 'We believe in everyone right to privacy, and we back that with a strong anti-spam policy and free WHOIS privacy.'
+      title: 'Advanced Security',
+      description: 'We prioritize your website’s safety with top-tier security measures and regular updates.'
     },
     {
       icon: Security,
-      title: 'Commitment to Security',
-      description: 'Our many security features include Multi Factor Authentication, auto-enabled sFTP.'
+      title: 'Innovative Approach',
+      description: 'We use the latest tech to ensure your website leads in your industry.'
     },
     {
       icon: Safe,
-      title: 'Embrace Open Source',
-      description: 'We strongly believe in providing open source solutions to our customers whenever possible.'
+      title: 'Clear Communication',
+      description: 'We keep you informed and supported from start to finish, with open communication.'
     }
   ];
 
