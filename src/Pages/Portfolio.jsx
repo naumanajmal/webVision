@@ -6,7 +6,7 @@ function Portfolio() {
   
  
     return (
-        <div className='flex flex-col items-center gap-10'>
+        <div className='flex flex-col items-center gap-10 pt-10'>
             <Navbar/> 
             <main  className =  "pt-10">
             <Projects/>

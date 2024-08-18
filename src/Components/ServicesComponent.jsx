@@ -27,7 +27,7 @@ const ServicesComponent = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
+    <div className="container mx-auto px-4 py-8 mt-10 md:mt-10">
       <div className="flex flex-col lg:flex-row ">
         <div className=" text-white bg-blue p-8 rounded-lg mb-8 lg:mb-0 lg:w-1/2 lg:mr-8 relative">
           <div>

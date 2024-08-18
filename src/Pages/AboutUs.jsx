@@ -8,7 +8,7 @@ function AboutUs() {
   
  
     return (
-        <div className='flex flex-col items-center gap-20'>
+        <div className='flex flex-col items-center gap-20 pt-10'>
                 <Navbar/> 
                 <main  className =  "pt-10">
                     <UniqueSolutions/>
