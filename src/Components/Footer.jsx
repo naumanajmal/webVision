@@ -15,12 +15,12 @@ const Footer = () => {
             <p className="text-sm text-gray-400 mb-4 font-Mona">
             Empowering businesses with innovative, secure, and custom web solutions, tailored to drive growth and success.
             </p>
-            <div className="flex space-x-4 ">
+            {/* <div className="flex space-x-4 ">
               <a href="#" className="text-gray-400 hover:text-white"><Facebook size={20} /></a>
               <a href="#" className="text-gray-400 hover:text-white"><Twitter size={20} /></a>
               <a href="#" className="text-gray-400 hover:text-white"><Instagram size={20} /></a>
               <a href="#" className="text-gray-400 hover:text-white"><Linkedin size={20} /></a>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
@@ -31,18 +31,17 @@ const Footer = () => {
        
         
             <h3 className="text-lg font-semibold mb-4 font-MonaBold">Contact Info</h3>
-            <p className="text-gray-400 mb-2 font-Mona">(219) 555-0114</p>
-            <p className="text-gray-400 mb-4 font-Mona">Ixi.ong@gmail.com</p>
+            <a href='tel:+971 50 387 5255'><p className="text-gray-400 mb-2 font-Mona">+971 50 387 5255</p></a>
+            <a href='mailto:info@webvision.ae'> <p className="text-gray-400 mb-4 font-Mona">info@webvision.ae</p></a>
             
-            <h3 className="text-lg font-semibold mb-4 font-MonaBold">Get in touch</h3>
-            <Link to={"/contact_us"} className="text-blue-500 hover:text-blue-400 font-Mona">Contact Form →</Link>
+            
           </div>
       
         </div>
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400 font-Mona">
-          <p>Copyright © 2024. All Rights Reserved</p>
+          <p> <span className='font-MonaBold'>WEBVISION </span> Copyright © 2024, All Rights Reserved</p>
         </div>
       </div>
     </footer>

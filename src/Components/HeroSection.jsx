@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <div className="mx-auto px-4  pt-10 flex flex-col md:flex-row justify-between items-center">
-      {/* Left side content */}
       <div className="md:w-2/4 mb-8  md:mb-0 space-y-10 flex flex-col items-center md:items-start">
         <div className='space-y-1'>
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-MonaBold ">
@@ -34,7 +33,7 @@ const HeroSection = () => {
             Transforming your digital presence for lasting impact
           </li>
         </ul>
-        <div className="flex flex-wrap gap-5 px-0 ">
+        <div className="flex flex-wrap gap-5  ">
           <span className="px-6 py-2 bg-yellow text-gray-900 rounded-full text-sm font-Mona">Web Design</span>
           <span className="px-6 py-2 bg-blue text-white rounded-full text-sm font-Mona">Web Development</span>
           <span className="px-6 py-2 bg-black text-white rounded-full text-sm font-Mona ">Ui/Ux</span>

@@ -12,9 +12,9 @@ const ServiceCard = ({ icon, title, description }) => (
       </h2>
     <h3 className="text-xl font-MonaBold mt-4 mb-2 text-blue ">{title}</h3>
     <p className="text-gray-600 mb-4 text-sm font-Mona">{description}</p>
-    <button className=" hover:text-purple-800 bg-blue rounded-full text-white w-8 p-1">
+    {/* <button className=" hover:text-purple-800 bg-blue rounded-full text-white w-8 p-1">
        → 
-    </button>
+    </button> */}
   </div>
 );
 
@@ -27,7 +27,7 @@ const ServicesComponent = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-10 md:mt-10">
+    <div className="container mx-auto px-4 py-8 mt-10 md:mt-20">
       <div className="flex flex-col lg:flex-row ">
         <div className=" text-white bg-blue p-8 rounded-lg mb-8 lg:mb-0 lg:w-1/2 lg:mr-8 relative">
           <div>

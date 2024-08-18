@@ -28,13 +28,13 @@ const Main = () => {
               To be recognized as a global leader in IT solutions, continuously pushing the boundaries of technology to create innovative, sustainable, and transformative digital experiences. We aim to set new standards in the IT industry, fostering a culture of excellence and creativity that inspires progress and growth.
             </p>
             </div>
-            <button className="font-MonaBold w-full border-[1px] border-white   p-1 pl-4   rounded-full flex items-center justify-between text-sm font-semibold  hover:text-indigo-800 transition duration-300">
+            {/* <button className="font-MonaBold w-full border-[1px] border-white   p-1 pl-4   rounded-full flex items-center justify-between text-sm font-semibold  hover:text-indigo-800 transition duration-300">
               <span>Learn More</span>
               <div className='p-3 items-center justify-center  rounded-full bg-white'>
               <FaArrowRight color = {"black"}/>
 
               </div>
-            </button>
+            </button> */}
           </div>
           <div className="bg-lightBlurbg p-6 rounded-lg h-1/2 space-y-6">
             <div>
@@ -43,13 +43,13 @@ const Main = () => {
               Our mission is to empower businesses through transformative IT solutions. We are committed to developing state-of-the-art technology services that enhance operational efficiency, ensure security, and drive growth.
             </p>
             </div>
-            <button className="font-MonaBold w-full border-[1px] border-black   p-1 pl-4   rounded-full flex items-center justify-between text-sm font-semibold  hover:text-indigo-800 transition duration-300">
+            {/* <button className="font-MonaBold w-full border-[1px] border-black   p-1 pl-4   rounded-full flex items-center justify-between text-sm font-semibold  hover:text-indigo-800 transition duration-300">
               <span>Learn More</span>
               <div className='p-3 items-center justify-center  rounded-full bg-white'>
               <FaArrowRight />
 
               </div>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

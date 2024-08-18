@@ -47,15 +47,13 @@ const Navbar = () => {
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-white z-40 flex items-center justify-center">
+        <div className="lg:hidden fixed inset-0 bg-white z-40 flex  pt-16">
           <div className="flex flex-col space-y-4 w-4/5 px-5 py-5">
-            <NavItem to="/" label="Home" onClick={toggleMenu} isActive={location.pathname === '/'} />
-            <NavItem to="/portfolio" label="Portfolio" onClick={toggleMenu} isActive={location.pathname === '/portfolio'} />
-            <NavItem to="/about" label="About Us" onClick={toggleMenu} isActive={location.pathname === '/about'} />
-            <NavItem to="/contact_us" label="Contact Us" onClick={toggleMenu} isActive={location.pathname === '/contact_us'} />
-            <Link to="/contact_us" className="border-[1px] text-blue-500 bg-white px-4 py-2 font-Mona rounded-full w-full text-center" onClick={toggleMenu}>
-              Get Started
-            </Link>
+            <NavItem2 to="/" label="Home" onClick={toggleMenu} isActive={location.pathname === '/'} />
+            <NavItem2 to="/portfolio" label="Portfolio" onClick={toggleMenu} isActive={location.pathname === '/portfolio'} />
+            <NavItem2 to="/about" label="About Us" onClick={toggleMenu} isActive={location.pathname === '/about'} />
+            <NavItem2 to="/contact_us" label="Contact Us" onClick={toggleMenu} isActive={location.pathname === '/contact_us'} />
+            
           </div>
         </div>
       )}
@@ -68,6 +66,17 @@ const NavItem = ({ to, label, onClick, isActive }) => (
     to={to}
     className={`font-Mona text-center px-4 py-2 rounded-full transition duration-300 w-full text-xs ${
       isActive ? 'bg-blue-500 text-white bg-blue' : 'text-blue hover:bg-blue hover:text-white'
+    }`}
+    onClick={onClick}
+  >
+    {label}
+  </Link>
+);
+const NavItem2 = ({ to, label, onClick, isActive }) => (
+  <Link
+    to={to}
+    className={`font-Mona  px-4 py-2 rounded-full transition duration-300 w-full text-lg uppercase ${
+        'bg-blue-500 text-blue font-MonaBold ' 
     }`}
     onClick={onClick}
   >
