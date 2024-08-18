@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import Logo from "../assets/logo.svg"
+import Logo from "../assets/logowhite.png"
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-             <img src={Logo}></img>
+             <img src={Logo} className="h-12"></img>
             </div>
             <p className="text-sm text-gray-400 mb-4 font-Mona">
             Empowering businesses with innovative, secure, and custom web solutions, tailored to drive growth and success.

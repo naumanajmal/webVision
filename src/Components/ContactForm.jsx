@@ -19,7 +19,7 @@ const ContactForm = () => {
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     setSubmitting(false);
     
-    fetch('http://127.0.0.1:8000/contact/', {
+    fetch('https://khushiikids.herokuapp.com/contact/', {
       method: 'POST',
       mode: 'cors',
       headers: {
