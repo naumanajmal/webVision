@@ -8,7 +8,7 @@ function ContactUs() {
     return (
         <div className='flex flex-col items-center gap-20'>
             <Navbar/> 
-            <main  className =  "pt-10 flex flex-col items-center">
+            <main  className =  "pt-32 flex flex-col items-center">
             <ContactForm/>
             </main>
             <Footer/>

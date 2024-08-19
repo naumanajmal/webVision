@@ -46,12 +46,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-auto px-4  pb-16 flex flex-col lg:flex-row items-center">
+    <div className="mx-auto px-4   flex flex-col lg:flex-row items-center "  >
       {/* Left side - Form */}
       <div className="w-full lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
         <h2 className="text-3xl font-bold mb-4 font-MonaBold">Get in touch</h2>
         <p className="text-gray-600 mb-8 font-Mona">Our friendly team would love to hear from you.</p>
-        
         <Formik
           initialValues={{ firstName: '', lastName: '', email: '', phoneNumber: '', message: '' }}
           validationSchema={validationSchema}
@@ -96,16 +95,16 @@ const ContactForm = () => {
       </div>
       
       {/* Right side - Images */}
-      <div className="rounded-lg p-8 flex-1 space-y-4 overflow-hidden">
+      <div className="rounded-lg p-8 flex-1 space-y-4 hidden md:block md:overflow-hidden ">
         <img 
           src={GetTouch2}
           alt="Collaborative App" 
-          className="h-0 md:h-full"
+          className="md:h-full"
         />
         <img 
           src={GetTouch1}
           alt="App Features" 
-          className="h-0 md:h-full"
+          className="md:h-full"
         />
       </div>
     </div>

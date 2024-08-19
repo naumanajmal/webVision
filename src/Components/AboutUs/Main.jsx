@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="container mx-auto px-4 py-12 w-full">
      <h2 className="text-sm font-semibold text-gray-600 mb-2">— About Us</h2>
-      <div className="flex flex-row gap-5 w-full">
+      <div className="flex flex-col md:flex-row gap-5 w-full">
       
         <div className='flex-1'>
           <h1 className="text-4xl font-bold mb-6 font-MonaBold">
@@ -20,7 +20,7 @@ const Main = () => {
             />
           </div>
         </div>
-        <div className="space-y-6 w-1/3">
+        <div className="space-y-6 md:w-1/3">
           <div className="bg-indigo-600 text-white p-6 rounded-lg h-1/2 space-y-6">
             <div>
             <h3 className="text-xl font-semibold mb-1 font-MonaBold">Our Ambition</h3>
