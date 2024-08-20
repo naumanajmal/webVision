@@ -3,13 +3,11 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import GetTouch1 from "../assets/getTouch1.svg";
 import GetTouch2 from "../assets/getTouch2.svg";
-const endpoint = 'https://TBD...LambdaURL...TBD'; // Add this later
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required('First name is required'),
   lastName: Yup.string().required('Last name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
-  phoneNumber: Yup.string().matches(/^[0-9]{10}$/, 'Invalid phone number').required('Phone number is required'),
   message: Yup.string().required('Message is required'),
 });
 
