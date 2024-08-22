@@ -56,7 +56,7 @@ export default function TimeLine() {
         <div className="w-full  mx-auto px-4 flex flex-col justify-center items-center ">
             <div className=" px-10 pr-16 py-4 relative">
                 {/* Top-left star */}
-                <h2 className="text-4xl md:text-5xl font-bold  text-center font-MonaBold">
+                <h2 className="text-3xl md:text-5xl font-bold  text-center font-MonaBold">
                     Web Design <span className="text-purple-600">Process</span>
                 </h2>
 
@@ -69,7 +69,7 @@ export default function TimeLine() {
             </div>
             <div>
 
-                <p className="text-md text-gray-600 text-center mb-8 relative font-Mona">
+                <p className="text-md text-gray-600 text-center mb-4 relative font-Mona">
                     Here are the steps taken to deliver you a outstanding web design project
                 </p>
             </div>

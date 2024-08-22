@@ -31,7 +31,7 @@ const ServicesComponent = () => {
       <div className="flex flex-col lg:flex-row ">
         <div className=" text-white bg-blue p-8 rounded-lg mb-8 lg:mb-0 lg:w-1/2 lg:mr-8 relative">
           <div>
-          <h2 className="text-3xl font-bold mb-4 font-MonaBold">What are we offering?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 font-MonaBold w-1/2 md:w-full">What are we offering?</h2>
           
           <img src={Vector} alt="vector" className="rounded-lg  h-20 -rotate-90 lg:rotate-0 pl-10 lg:pl-0" />
        

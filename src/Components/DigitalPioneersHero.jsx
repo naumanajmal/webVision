@@ -6,7 +6,7 @@ const DigitalPioneersHero = () => {
     <div className="bg-blue text-white md:mt-20 mt-6 px-10">
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-3/5 lg:pr-12 mb-8 lg:mb-0 flex flex-col items-center lg:items-start md:gap-2 gap-3">
-          <h1 className="text-4xl lg:text-5xl  mb-4 font-MonaBold">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl  mb-4 font-MonaBold">
             Digital Pioneers Ready to Illuminate Your Path
           </h1>
           <p className="mb-6 text-lg font-Mona">
