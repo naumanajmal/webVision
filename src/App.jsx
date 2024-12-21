@@ -9,7 +9,6 @@ const App = () => {
 
 
   return (
-
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
