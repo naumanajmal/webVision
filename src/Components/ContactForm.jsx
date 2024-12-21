@@ -14,37 +14,37 @@ const validationSchema = Yup.object().shape({
 const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    setSubmitting(true); // Set submitting to true when starting
-    
-    fetch('https://khushiikids.herokuapp.com/contact/', {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(values)
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('Form submitted successfully:', data);
-        setIsSubmitted(true);
-        alert('Thank you! Your message has been sent.');
-        resetForm();
-      })
-      .catch(error => {
-        console.error('There was a problem with your fetch operation:', error);
-        alert('Sorry, there was an error sending your message. Please try again.');
-      })
-      .finally(() => {
-        setSubmitting(false); // Ensure submitting is set to false regardless of outcome
+
+
+  const handleSubmit = async (values ,  { setSubmitting, resetForm }) => {
+    setSubmitting(true);
+    try {
+      const response = await fetch('https://khushiikids.herokuapp.com/contact/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
       });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Something went wrong');
+      }
+  
+      const data = await response.json();
+      console.log('Form submitted successfully:', data);
+      alert('Thank you! Your message has been sent.');
+      resetForm();
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('There was a problem with your fetch operation:', error);
+      alert(`Error: ${error.message}`);
+    } finally {
+      setSubmitting(false);
+    }
   };
+   
 
   return (
     <div className="mx-auto px-4 flex flex-col lg:flex-row items-center">
